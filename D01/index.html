@@ -34,6 +34,10 @@
         <div
           v-for="book in books"
           class="d-flex my-3 mx-3 align-items-baseline card col-12 col-sm-6 col-md-4 col-lg-3"
+          :class="[
+            book.NumberOfPages < 50 ? 'less' : 'more',
+          ]"
+
         >
           <div class="row">
             <img
