@@ -1,0 +1,14 @@
+.link {
+    color: orange;
+    text-decoration: none;
+}
+
+.card {
+    width: 20rem;
+
+}
+.card img {
+    height: 20rem;
+    width: 100%;
+    padding: 0 !important;
+}
