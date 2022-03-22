@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue 3 Tutorial</title>
+  </head>
+  <style>
+    [v-cloak] {
+      display: none;
+    }
+  </style>
+  <body>
+    <div id="app" v-cloak>
+      {{ message }}
+
+      <input v-model="message" />
+
+      <hr />
+      <button @click="isVisable = !isVisable">Toogle box</button>
+
+      <div v-if="isVisable">test</div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+      Vue.createApp({
+        data() {
+          return {
+            isVisable: false,
+            message: "Hello Vue!",
+          };
+        },
+        methods: {
+          toogleBox() {
+            this.isVisable = !this.isVisable;
+          },
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
