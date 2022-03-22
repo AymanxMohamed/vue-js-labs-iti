@@ -21,7 +21,10 @@
       >
         <a href="#" class="link" @click="isBookVisable = true"> Books </a>
         <div class="d-flex align-items-baseline">
-          <p class="px-2">{{ wishlist.length }} <span v-show="wishlist.length > 1">Books</span> <span v-show="wishlist.length == 1">Book</span>  with total price {{ formatCurrency(getTotalPrice()) }}</p>
+          <p class="px-2">
+            {{ wishlist.length }} 
+            <span v-show="wishlist.length > 1">Books</span> 
+            <span v-show="wishlist.length == 1">Book</span>  with total price {{ formatCurrency(getTotalPrice()) }}</p>
           <div class="btn btn-primary" @click="isBookVisable = false">
             Wished List
           </div>
