@@ -1,7 +1,7 @@
 <template>
 <div class="container">
     <div class="row">
-        <div class="col-12 bg-warning py-2 my-2">
+        <div class="col-12 py-2 my-2">
             <HeaderComponent/>
         </div>
     </div>
