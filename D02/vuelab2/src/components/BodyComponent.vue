@@ -1,5 +1,6 @@
 <template>
-    <div class="row">
+<div class="container">
+   <div class="row">
         <button data-bs-toggle="modal" href="#form" role="button" class="btn btn-primary py-2 my-1">
             Add new Student
         </button>
@@ -87,7 +88,9 @@
         </div>
     </div>
     </div>
+    </div>
 </div>
+ 
 </template>
 
 <script>

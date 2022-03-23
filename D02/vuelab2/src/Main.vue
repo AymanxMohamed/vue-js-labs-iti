@@ -4,9 +4,6 @@
             <div class="col-12">
                 <navbar/>
             </div>
-            <div class="col-12">
-                Photos
-            </div>
         </div>
     </div>
 </template>

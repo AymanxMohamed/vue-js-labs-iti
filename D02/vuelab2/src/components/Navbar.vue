@@ -1,16 +1,6 @@
 <template>
     <main class="container-fluid">
-    <nav
-        class="d-flex bg-dark justify-content-between text-light p-2 my-2 align-items-baseline"
-    >
-        <a href="#" class="link" @click="isBookVisable = true"> Books </a>
-        <div class="d-flex align-items-baseline">
-        <p class="px-2">{{ wishlist.length }} <span v-show="wishlist.length > 1">Books</span> <span v-show="wishlist.length == 1">Book</span>  with total price {{ formatCurrency(getTotalPrice()) }}</p>
-        <div class="btn btn-primary" @click="isBookVisable = false">
-            Wished List
-        </div>
-        </div>
-    </nav>
+   
     <div
         class="row d-flex justify-content-between align-items-baseline"
         v-if="isBookVisable"
