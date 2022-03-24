@@ -1,11 +1,16 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/books">Books</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <TheNavbar/>
   <router-view/>
 </template>
+
+<script>
+  import TheNavbar from '@/components/TheNavbar'
+  export default {
+    components: {
+        TheNavbar
+    }
+}
+</script>
 
 <style>
 #app {
@@ -17,15 +22,18 @@
 }
 
 nav {
-  padding: 30px;
+  padding: 3rem;
+
 }
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: white;
+  text-decoration: none;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: white;
+  text-decoration: none;
 }
 </style>
