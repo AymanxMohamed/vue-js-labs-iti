@@ -1,6 +1,6 @@
 <template>
     <nav
-        class="d-flex bg-dark justify-content-between text-light p-2 my-2 align-items-baseline"
+        class="d-flex bg-dark justify-content-between text-light p-2 align-items-baseline sticky-top"
     >
         <router-link to="/books">Books</router-link>
         <div class="d-flex align-items-baseline">

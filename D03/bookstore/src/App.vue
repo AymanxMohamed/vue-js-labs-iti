@@ -22,6 +22,7 @@
 }
 
 nav {
+  margin-top: 0;
   padding: 3rem;
 
 }
